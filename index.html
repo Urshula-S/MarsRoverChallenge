@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google fonts link : ROBOTO font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Stylesheet link-->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Bleu Valet Coding Challenge - Mars Rover</title>
+</head>
+
+<body>
+
+    <h1>Blue Valet Coding Challenge - Mars Rover</h1>
+
+    <div class="container">
+        <!--First col-->
+        <div class="col">
+            <h2>Rover A</h2>
+
+            <form action="">
+                <label for="initialCoordinates">Initial coordinates of the rover</label><br>
+                <input type="text" id="initialCoordinates" name="initialCoordinates">
+            </form>
+
+            <form action="">
+                <label for="compassCardinal">Orientation: Choice of the cardinal compass point</label><br>
+                <input type="text" id="compassCardinal" name="compassCardinal" value="" placeholder="N ou S ou E ou O">
+            </form>
+
+            <form action="">
+                <label for="instructionMove">Control: Instructions given to the rover</label><br>
+                <input type="text" id="instructionMove" name="instructionMove" value="" placeholder="L ou R ou M">
+            </form>
+
+            <div class="row">
+                <button type="button" onclick="checkAllInputs()" class="button">Validation</button>
+
+                <!-- <button type="button" onclick="getFirstInputValue() , getSecondInputValue()" class="button">Validation</button> -->
+
+                <button type="button" onclick="resetInputsValues()" class="button">Reset</button>
+            </div>
+
+            <!-- Alert messages and notifications -->
+            <div id="validationGroup">
+                <p id="firstValidNotif"></p>
+                <p id="secondValidNotif"></p>
+            </div>
+
+            <div id="errorGroup">
+                <p id="firstErrorNotif"></p>
+                <p id="secondErrorNotif"></p>
+            </div>
+        </div>
+
+        <!--Second col-->
+        <div class="col">
+            <!--Container receiving the grid-->
+            <div class="gridContainer">
+                <img src="img/compass_bg.png" alt="Compass image" width=150>
+            </div>
+        </div>
+    </div>
+
+    <!--Jquery script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Main script -->
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>
