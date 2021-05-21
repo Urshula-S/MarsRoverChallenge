@@ -99,7 +99,7 @@ function turnRight(rover){
         case 'E':
             direction = 'S'
             break;
-        case 'O':
+        case 'W':
             direction = 'N'
             break;
     }
