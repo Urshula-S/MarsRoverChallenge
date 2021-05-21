@@ -14,7 +14,7 @@
 
     scripts
         app.js                              main js script used for the challenge
-        tests.js                             a script file that contains all my tries
+        tests.js                            a script file that contains all my attempts
 
     styles
         style.css                           main stylesheet
@@ -42,6 +42,6 @@
     3 3 E
     MMRMMRMRRM
 
-### Test Output
+### Test Output expected
     1 3 N
     5 1 E
