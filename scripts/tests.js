@@ -82,27 +82,3 @@ function rotateMove() {
     }
 
 }
-
-//the different positions
-
-let rover = document.getElementById("roverImg")
-
-function turnRight(rover){
-
-    switch (direction) {
-        case 'N':
-            direction = 'E'
-            break;
-        case 'S':
-            direction = 'W'
-            break;
-        case 'E':
-            direction = 'S'
-            break;
-        case 'W':
-            direction = 'N'
-            break;
-    }
-
-    console.log('the function was called ' + rover.direction)
-}
