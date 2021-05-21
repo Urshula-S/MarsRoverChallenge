@@ -1,0 +1,95 @@
+/*
+ * Main stylesheet for the whole project
+ */
+
+body {
+    width:100%;
+    margin:0;
+    background-color: ghostwhite;
+    font-family: 'roboto' , sans-serif;
+    /*background-image: url(/img/pexels-tom-leishman-5259407.jpg)*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+}
+
+h1 {
+    color: #003049;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+
+.col {
+    padding: 0px 25px;
+}
+
+label {
+    font-weight: 600;
+    color: #003049;
+}
+
+input {
+    width: 30%;
+    margin: 25px 0px;
+    padding: 8px 5px;
+}
+
+.button {
+    min-width: 120px;
+    padding: 12px 0px;
+    margin: 25px 25px 25px 0px;
+    background-color: #d62828;
+    border: solid #d62828;
+    color: #003049;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #003049;
+    color: #d62828;
+    border: solid #003049;
+}
+
+#validationGroup p {
+    color: green;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+#errorGroup p {
+    color: #d62828;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.gridContainer {
+    padding: 35px 45px;
+    display:flex;
+    align-items: flex-end;
+    justify-content:center;
+}
+
+table {
+    margin: auto;
+}
+
+table td {
+    padding: 25px;
+    border: 3px solid #d62828;
+    border-radius: 4px;
+    background-color: ghostwhite;
+}
+
+.rover {
+    background-image: url(img/roverA.png);
+    background-repeat: no-repeat;
+}
+
+
