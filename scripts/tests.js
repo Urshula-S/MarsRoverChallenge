@@ -1,18 +1,18 @@
 let rover
 
 function turnRight() {
-    switch (orientation) {
+    switch(rovOrientation) {
         case 'N':
-            rover.orientation = 'E'
+            rover.rovOrientation = 'E'
             break;
         case 'S':
-            rover.orientation = 'W'
+            rover.rovOrientation = 'W'
             break;
         case 'E':
-            rover.orientation = 'S'
+            rover.rovOrientation = 'S'
             break;
         case 'W':
-            rover.orientation = 'N'
+            rover.rovOrientation = 'N'
             break;
         default:
             console.log("unknown orientation TR FCT")
@@ -20,18 +20,18 @@ function turnRight() {
 }
 
 function turnLeft() {
-    switch(orientation) {
+    switch(rovOrientation) {
         case 'N':
-            rover.orientation = 'W'
+            rover.rovOrientation = 'W'
             break;
         case 'S':
-            rover.orientation = 'E'
+            rover.rovOrientation = 'E'
             break;
         case 'E':
-            rover.orientation = 'N'
+            rover.rovOrientation = 'N'
             break;
         case 'W':
-            rover.orientation = 'S'
+            rover.rovOrientation = 'S'
             break;
         default:
             console.log("unknown orientation TL FCT")
@@ -43,7 +43,7 @@ function moveForward(){
     let y
     let x
 
-    switch (orientation) {
+    switch (rovOrientation) {
         case 'N':
             y++
             break;
@@ -83,12 +83,7 @@ function rotateMove() {
 
 }
 
-
-
-
-
-//les différentes positions
-
+//the different positions
 
 let rover = document.getElementById("roverImg")
 
@@ -111,35 +106,3 @@ function turnRight(rover){
 
     console.log('the function was called ' + rover.direction)
 }
-
-/*
-function turnLeft() {
-
-}
-
-
-function moveForward() {
-
-}
-
-
-/*
-function turnLeft() {
-
-    switch (direction) {
-        case 'N':
-            direction = 'O'
-            break;
-        case 'S':
-            direction = 'E'
-            break;
-        case 'E':
-            direction = 'N'
-            break;
-        case 'O':
-            direction = 'S'
-            break;
-    }
-}
-
-*/

@@ -99,26 +99,26 @@ function checkAllInputs()
     {
         if (inputValCard == 'N' || inputValCard == 'S' || inputValCard == 'E' || inputValCard == 'W')
         {
-            document.getElementById("firstValidNotif").innerHTML = `La valeur ${inputValCard} est bien un point cardinal`
+            document.getElementById("firstValidNotif").innerHTML = `The value ${inputValCard} is a valid cardinal compass point.`
 
             for (let i = 0; i < inputValMove.length; i++) {
                 if (inputValMove[i] != 'R' && inputValMove[i] != 'L' && inputValMove[i] != 'M')
                 {
-                    document.getElementById("secondErrorNotif").innerHTML = `Le Rover ne bouge pas . La valeur ${inputValMove} contient des lettres non autorisées`
+                    document.getElementById("secondErrorNotif").innerHTML = `The rover does not move. The value ${inputValMove} contains unauthorized letters.`
                     return bool = false
                 }
             }
-            document.getElementById("secondValidNotif").innerHTML = `Le Rover bouge. Les valeurs sont autorisées.`
+            document.getElementById("secondValidNotif").innerHTML = `The rover moves. All values are valid.`
             return bool = true
         }
     }
     else if (inputValCard.length == 0)
     {
-        document.getElementById("firstErrorNotif").innerHTML = `Le rover ne bouge pas. L'un des champs est vide`
+        document.getElementById("firstErrorNotif").innerHTML = `The rover does not move. One field is empty.`
         return bool = false
     }
     else {
-        document.getElementById("firstErrorNotif").innerHTML = `Le rover ne bouge pas. Vous avez fait une erreur`
+        document.getElementById("firstErrorNotif").innerHTML = `The rover does not move. Your made a mistake.`
         return bool = false
     }
 }
