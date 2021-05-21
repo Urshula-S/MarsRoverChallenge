@@ -140,6 +140,13 @@ function resetInputsValues() {
     }
 }
 
+//add image of the rover on the initial position cell
+function addImage() {
+    const img = document.createElement("img")
+    img.src = "img/roverA.png"
+    const cell = document.getElementById("55")
+    cell.appendChild(img)
+}
 
 
 
