@@ -27,12 +27,12 @@
     The main control commands are the following : Left Right and M (move forward)
     The lower coordinate is 0.0
 
-### What I did
+### Explanations
 
     Create a function to implement a table dynamically.
     Add an input that contains the initial position of the rover
     Add an input that enables to choose the orientation
-    Add an input that enables to choose the instructions of movement thanks to a string
+    Add an input that enables to choose the instructions of movement thanks to a string + analyse the string
     Set up the rover respecting the initial position facing the north
 
 ### Test Input
