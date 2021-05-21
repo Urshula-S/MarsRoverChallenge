@@ -48,7 +48,7 @@ function getFirstInputValue(){
     console.log(inputValCard)
 
     if (inputValCard.length == 1) {
-        if (inputValCard == 'N' || inputValCard == 'S' || inputValCard == 'E' || inputValCard == 'O')
+        if (inputValCard == 'N' || inputValCard == 'S' || inputValCard == 'E' || inputValCard == 'W')
         {
             //console.log('vous avez bien choisi un point cardinal')
             document.getElementById("notif1Valide").innerHTML = `La valeur ${inputValCard} est bien un point cardinal`
@@ -97,7 +97,7 @@ function checkAllInputs()
 
     if (inputValCard.length == 1)
     {
-        if (inputValCard == 'N' || inputValCard == 'S' || inputValCard == 'E' || inputValCard == 'O')
+        if (inputValCard == 'N' || inputValCard == 'S' || inputValCard == 'E' || inputValCard == 'W')
         {
             document.getElementById("firstValidNotif").innerHTML = `La valeur ${inputValCard} est bien un point cardinal`
 
@@ -140,34 +140,12 @@ function resetInputsValues() {
     }
 }
 
+/*
 //add image of the rover on the initial position cell
 function addImage() {
     const img = document.createElement("img")
     img.src = "img/roverA.png"
     const cell = document.getElementById("55")
     cell.appendChild(img)
-}
-
-
-
-/*
-function turnRight(rover){
-
-    switch (direction) {
-        case 'N':
-            rover.direction = 'E'
-            break;
-        case 'S':
-            rover.direction = 'O'
-            break;
-        case 'E':
-            rover.direction = 'S'
-            break;
-        case 'O':
-            rover.direction = 'N'
-            break;
-    }
-
-    console.log('the function was called ' + rover.direction)
 }
 */
